@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fbf9f6;
+  --color-brand-100: #f5efe6;
+  --color-brand-200: #e6d8c3;
+  --color-brand-300: #d1b99a;
+  --color-brand-400: #ba9770;
+  --color-brand-500: #a37a4e;
+  --color-brand-600: #8c613c;
+  --color-brand-700: #704c30;
+  --color-brand-800: #5c3e29;
+  --color-brand-900: #4c3322;
+  --color-brand-950: #2b1c12;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background: radial-gradient(circle at 85% 15%, rgba(186, 151, 112, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 15% 85%, rgba(43, 28, 18, 0.05) 0%, transparent 50%);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fbf9f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1b99a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ba9770;
+}

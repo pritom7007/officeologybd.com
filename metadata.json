@@ -1,0 +1,8 @@
+{
+  "name": "Officeology BD",
+  "description": "Curated workspaces and desk essentials for productivity, featuring interactive workspace planner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
